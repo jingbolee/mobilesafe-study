@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/titleStyle"
+        android:text="功能列表" />
+
+    <com.lijingbo.mobilesafe.view.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="手机安全卫士就是厉害，帮助您保卫手机安全，不让病毒和流氓软件侵占你的手机，哈哈哈！！！"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:numColumns="3"
+        android:verticalSpacing="20dp" >
+    </GridView>
+
+</LinearLayout>

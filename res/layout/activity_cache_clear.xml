@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lijingbo.mobilesafe.activity.CacheClearActivity">
+
+    <TextView
+        style="@style/titleStyle"
+        android:text="缓存清理"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_cache_stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="共扫描到1项缓存数据，总大小728.00KB"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+
+        <ProgressBar
+            android:id="@+id/pb_cache_progress"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_weight="1000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_cache_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"></LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clearAllCache"
+        android:text="一键清理"/>
+</LinearLayout>

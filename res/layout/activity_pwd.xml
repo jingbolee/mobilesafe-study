@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lijingbo.mobilesafe.activity.PwdActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="看门狗验证密码节目，请输入看门狗的密码"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_process_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_default"/>
+
+        <TextView
+            android:id="@+id/tv_processname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应用程序的名称"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_inputpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"/>
+
+    <Button
+        android:onClick="ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认"/>
+</LinearLayout>

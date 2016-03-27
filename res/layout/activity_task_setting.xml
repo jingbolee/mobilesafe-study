@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lijingbo="http://schemas.android.com/apk/res/com.lijingbo.mobilesafe"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lijingbo.mobilesafe.activity.TaskSettingActivity">
+
+    <TextView
+        style="@style/titleStyle"
+        android:text="进程管理"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_tasksystemvisible"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="显示系统进程"
+            android:textColor="@color/black"
+            android:textSize="22sp"/>
+
+        <CheckBox
+            android:id="@+id/cb_tasksystemvisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"/>
+    </RelativeLayout>
+
+    <com.lijingbo.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_autokillprocess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lijingbo:title="定时清理进程"
+        lijingbo:update_off="未开启"
+        lijingbo:update_on="已开启"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:id="@+id/tv_showtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="上次清理时间：2016-03-01  08:45:01"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tv_showkillinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="共清理了1个进程，释放了5.00MB内存"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="关闭长时间未使用的进程，并定时进行清理，可以释放系统资源，提升手机运行速度。"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+
+</LinearLayout>
